@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Operation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">CRUD Operation with JavaScript</h2>
+
+    <!-- Form to add a new item -->
+    <form id="itemForm" class="mb-4">
+      <div class="form-group">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" class="form-control" placeholder="Enter item name" required>
+        <small id="formError" class="error"></small>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+
+    <!-- Table to display items -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="itemTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
